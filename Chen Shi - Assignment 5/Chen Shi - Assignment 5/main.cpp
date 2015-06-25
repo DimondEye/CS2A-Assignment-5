@@ -16,13 +16,10 @@ string maskLetter(string theString, char keyCharacter);
 string removeCharacter(string theString, char keyCharacter);
 int countKey(string theString, char keyCharacter);
 
-// Global variables
-char keyCharacter;
-string theString;
-
 int main()
 {
-   string result;
+   char keyCharacter;
+   string theString, result;
    int count;
 
    keyCharacter = getKeyCharacter();
@@ -57,6 +54,7 @@ char getKeyCharacter()
 string getString()
 {
    string temp;
+
    do {
       cout << "Please enter a phrase or sentence >= 4 characters: \n";
       getline(cin, temp);
